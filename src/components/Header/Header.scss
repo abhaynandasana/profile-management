@@ -1,0 +1,43 @@
+.header-wrapper {
+    background-color: #023047;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    .logo-wrap {
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 25px;
+        flex:1;
+
+    }
+    .input-wrap {
+        flex: 2;
+        display: flex;
+        gap: 15px;
+
+        .ant-select-single {
+            display: flex;
+            max-width: 180px;
+            margin-left: auto;
+            transition: 0.9s;
+            width: 100%;
+        }
+        .ant-select-focused {
+            max-width: 100%;
+            transition: 0.9s;
+            width: 100%;
+        }
+        .input-list {
+            display: flex;
+            justify-content: flex-end;
+            width:fit-content;
+            // width: 100%;
+            .ant-tree-select{
+             min-width: 400px;
+             max-width: 400px;
+             width: 100%;
+            }
+        }
+    }
+}

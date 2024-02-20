@@ -1,0 +1,106 @@
+.breadcrumb-text{
+    font-size: 30px;
+    padding: 20px 0 0 20px;
+}
+.profile-no-found-text {
+    width: 100%;
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+.profile-wrap {
+    width: 100%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    height: calc(100vh - 216px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    position: relative;
+    .spin-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0000007d;
+        z-index: 999;
+        .ant-spin {
+            .ant-spin-dot-item {
+                background-color: #fff;
+                width: 19px;
+                height: 19px;
+            }
+            .ant-spin-dot {
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+    .profile-img-wrap {
+        position: relative;
+        padding: 90px 60px 0 60px;
+        .breadcrumb-wrap {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: #fff;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .cover-img {
+            background-image: url('../../assets/images/CoverImage.jpg');
+            background-size: cover;
+            background-position:center;
+            height: 150px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .profile-img{
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 0;
+            width: fit-content;
+            border: 5px solid #fff;
+            border-radius: 100%;
+            img{
+                border-radius: 100%;
+                height: 120px;
+                width: auto;
+            }
+        }
+        .ant-badge{
+            &.ant-badge-status  {
+                position: absolute;
+                right: 5px;
+                bottom: 15px;
+                .ant-badge-status-dot {
+                    border: 3px solid #fff;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+    .profile-data {
+        padding: 0 60px;
+        margin-top: 15px;
+        .profile-data-list {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 400;
+            .profile-name {
+                font-size: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+}

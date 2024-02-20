@@ -1,0 +1,66 @@
+.profile-card-wrap {
+    position: relative;
+    margin-bottom: 16px;
+    min-width: 260px;
+    height: calc(100% - 16px);
+    overflow: hidden;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0px #0000001a;
+    min-height: 220px;
+    .profile-user-cover {
+        height: 80px;
+        opacity: 0.9;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #023047a6;
+    }
+    .ant-card {
+        background: transparent;
+        border: 0;
+        margin: 25px 0 0 0;
+        .ant-card-cover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .user-profile{
+                position: relative;
+                width: fit-content;
+                border: 5px solid #fff;
+                border-radius: 100%;
+                img {
+                    width: 100px;
+                    min-width: 100px;
+                    min-height: 100px;
+                    border-radius: 100%;
+                }
+                .ant-badge {
+                    position: absolute;
+                    bottom: 4px;
+                    right: 12px;
+                    &.ant-badge-status {
+                        .ant-badge-status-dot {
+                            width: 14px;
+                            height: 14px;
+                            border: 2px solid #fff;
+                        }
+                    }
+                }
+             }
+
+        }
+        .ant-card-body {
+            padding: 25px 0;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            .user-name {
+                cursor: pointer;
+                max-width: 260px;
+            }
+        }
+    }
+}

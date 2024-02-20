@@ -1,0 +1,24 @@
+.footer {
+    background-color: #023047;
+    padding: 15px;
+    color: #fff;
+    min-height: 131px;
+    position: sticky;
+    .footer-head {
+        font-size: 20px;
+        border-bottom: 1px solid #fff;
+        width: fit-content;
+    }
+    .footer-data {
+        .footer-item {
+            margin-top: 15px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 25% 25% 25% 25%;
+            cursor: pointer;
+            .item {
+                margin: 5px 0;
+            }
+        }
+    }
+}
